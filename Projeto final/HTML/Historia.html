@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História</title>
+    <link rel="stylesheet" href="../CSS/Historia.css">
+    <script src="../JS/Historia.js"></script>
+</head>
+<body>
+
+	<div class="audio-menu">
+        <h2>Menu de Áudio</h2>
+        <div class="audio-controls">
+            <button onclick="playAudio()">Play</button>
+            <button onclick="pauseAudio()">Pause</button>
+        </div>
+    </div>
+
+    <!-- Áudio de exemplo -->
+    <audio id="myAudio">
+        <source src="audio/som1_historia.ogg" type="audio/ogg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+	
+   
+    <button class="btn" id="prevBtn" onclick="parteAnterior()">Anterior</button>
+	 <button class="btn" id="nextBtn" onclick="proximaParte(); proximoAudio();">Avançar</button>
+	
+	<script>
+        var audio = document.getElementById('myAudio');
+
+        function playAudio() {
+            audio.play();
+        }
+
+        function pauseAudio() {
+            audio.pause();
+        }
+
+        function stopAudio() {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    </script>
+</body>
+</html>
+

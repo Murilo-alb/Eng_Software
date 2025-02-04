@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-image: url('../IMG/introducao_papagaio.jpg');
+            background-size: contain; /* Redimensiona a imagem para cobrir toda a área do body */
+            background-position: center; /* Centraliza a imagem de fundo */
+			display: block;
+			background-color:#000000;
+        }
+
+body.img2 {
+	background-image: url('../IMG/historia_papagaio.jpg');
+}
+
+body.img3 {
+    background-image: url('../IMG/historia_micoleao.jpg');
+}
+
+body.img4 {
+    background-image: url('../IMG/historia_cobra.jpg');
+}
+
+body.img5 {
+    background-image: url('../IMG/historia_tamandua.jpg');
+}
+
+body.img6 {
+    background-image: url('../IMG/historia_tartaruga.jpg');
+}
+
+body.img7 {
+    background-image: url('../IMG/historia_boto.jpg');
+}
+
+body.img8 {
+    background-image: url('../IMG/historia_sapo.jpg');
+}
+
+body.img9 {
+    background-image: url('../IMG/historia_onça.jpg');
+}
+body.img10 {
+    background-image: url('../IMG/historia_tucano.jpg');
+}
+body.img11 {
+    background-image: url('../IMG/historia_piranha.jpg');
+}
+
+body.img12 {
+	background-image: url('../IMG/historia_jacare.jpg');
+}
+
+
+.btn {
+    position: fixed;
+    bottom: 20px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:saddlebrown;
+    padding: 15px;
+    border-radius: 8px;
+    color:antiquewhite;
+    cursor: pointer;
+}
+#prevBtn {
+    left: 33vw; 
+}
+
+#nextBtn {
+    right: 33vw; /* Distância do botão "Próxima Parte" até a direita da página */
+}
+
+.btn:hover {
+    background-color: rgb(250, 173, 80);
+    transition: 0.3s;
+	cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.audio-menu {
+	width:9%;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #c8e6c9; /* tom de verde claro */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .audio-menu h2 {
+            margin: 0;
+            padding-bottom: 10px;
+            text-align: center;
+            color: #1b5e20; /* verde escuro para o texto */
+        }
+
+        .audio-controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .audio-controls button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50; /* tom mais escuro de verde */
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .audio-controls button:hover {
+            background-color: #388e3c; /* tom mais escuro de verde ao passar o mouse */
+        }
+    </style>
